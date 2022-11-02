@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Kolker+Brush">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <title>計算機</title>
+    <script src="./scriptfile.js"></script>
+  </head>
+  <body>
+    <div class="reigen">
+      <div class="image">
+        <img src="./styles/Reigen.png">
+      </div>
+    <div class="title">
+        <h1> Raghu's Calculator </h1>
+    </div>
+    </div>
+    <div class="calc">
+        <input type="text" id="display">
+        <div class="buttons">
+        <div class="numButtons">
+          <div class="rowOne">
+            <button type="button" name="one" onclick="pressOne()">1</button>
+            <button type="button" name="two" onclick="pressTwo()">2</button>
+            <button type="button" name="three" onclick="pressThree()">3</button>
+          </div>
+          <div class="rowTwo">
+            <button type="button" name="four" onclick="pressFour()">4</button>
+            <button type="button" name="five" onclick="pressFive()">5</button>
+            <button type="button" name="six" onclick="pressSix()">6</button>
+          </div>
+          <div class="rowThree">
+            <button type="button" name="seven" onclick="pressSeven()">7</button>
+            <button type="button" name="eight" onclick="pressEight()">8</button>
+            <button type="button" name="nine" onclick="pressNine()">9</button>
+          </div>
+          <div class="rowFour">
+            <div class="zero">
+              <button type="button" name="zero" onclick="pressZero()">0</button>
+            </div>
+            <div class="decimalPoint">
+              <button type="button" name="Clear" onclick="pressClear()">clr</button>
+            </div>
+          </div>
+        </div>
+          <div class="colOne">
+            <button type="button" name="subtraction" onclick="subtract()">-</button>
+            <button type="button" name="addition" onclick="add()">+</button>
+            <button type="button" name="multiplication" onclick="multiply()">*</button>
+            <button type="button" name="division" onclick="checkResult()">res</button>
+          </div>
+          </div>
+
+    </div>
+    <div class="footer">
+          <div class="link">
+            <img src="./styles/git.png">
+            <a href="https://github.com/Prex-san" target="_blank">GitHub</a>
+          </div>
+          <div>
+            <p>Version : 0.1(beta)</p>
+          </div>
+    </div>
+  </body>
+</html>
