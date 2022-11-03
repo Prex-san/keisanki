@@ -1,6 +1,6 @@
 var a = 0;
 var b = 1;
-
+var imageTracker = 'i';
 function pressOne(){
   prevVal = document.getElementById("display").value
   document.getElementById("display").value = prevVal + 1;
@@ -59,4 +59,27 @@ function subtract(){
 function multiply(){
   a = a*parseInt(document.getElementById("display").value);
   document.getElementById("display").value = '';
+}
+function playMusic(){
+  var one = document.getElementById("audio");
+  one.loop=true;
+  if(one.paused){
+    one.play();
+  }
+  else{
+    one.pause();
+  }
+  one.volume=0.2;
+
+  var image = document.getElementById("musicControl");
+
+
+  if (imageTracker == "i"){
+      image.src = "styles/Images/Mute_icon.svg"
+      imageTracker = "I"
+  }
+  else {
+      image.src = "styles/Images/speaker.png"
+      imageTracker = "i"
+  }
 }

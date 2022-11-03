@@ -112,7 +112,7 @@ a{
   text-decoration: none;
   color:#666;
 }
-.link img{
+.left img{
   height:20px;
   width: 20px;
 }
@@ -121,4 +121,19 @@ a{
   justify-content: center;
   align-items: center;
   gap:10px;
+}
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.music{
+  border-radius: 100px;
+  border: solid 2px black;
+  padding:7px;
+}
+.music img{
+  height: 18px;
+  width: 18px;
 }
